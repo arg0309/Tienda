@@ -1,0 +1,130 @@
+@media screen and (max-width:600px){
+
+    .menu-principal{
+
+        /* margen del menu principal */
+        margin-top: 0;
+
+        position: fixed;
+
+        top:0;  
+    }
+
+    .menu-bar{
+        
+        /* tamaño de menu responsive */
+        width: 100%;
+
+        /* tamaño de la vista  */
+        height: 100vh;
+        
+        /* color del cuadro del menu */
+        
+        background: #ecb359;
+
+
+        /* posición fija del menu  */
+        position: fixed;
+
+        /* justificar contendió  */
+
+        justify-content: space-around;
+
+        /* posición de los  elemento del menu bar */
+        align-items: center;
+
+        /* propiedad de direction  */
+
+        flex-direction: column;
+
+        top: 0;
+        
+        right: 0;
+
+        margin-top: 74px;
+
+        /* capas de los elementos */
+
+        z-index: 1000;
+
+        /* estilo de borde  */
+        border-radius: 0px 0px 0px 400px;
+
+        
+        /* Propiedad Transform */
+
+
+        transform: translateX(100%); 
+    }
+
+    .menu-bar .enlaces ul li{
+
+        /* Propiedad para los elementos uno debajo del otro display block */
+        display: block;
+
+        padding: 20px 10px;
+
+        /* alineación de texto  */
+        text-align: center;
+    }
+
+    /* clase de los enlaces  */
+    .menu-bar .enlaces ul li a{
+
+        /* tamaño del texto de los enlaces  */
+        font-size: 20px;
+    }
+    
+    /* Clases para Las Redes sociales */
+
+    .sociales span.material-icons{
+
+        /* tamaño del texto para los iconos */
+        font-size: 40px;
+
+        margin-bottom: 200px;
+    }
+
+    /* personalizar tamaño del slider servicios  */
+
+    .slider{
+        height: calc(100vh- -100px);
+    }
+
+    .imagen-servicios{
+        width: 65%;
+    }
+    
+    .descripcion-servicios h1{
+        font-size: 7vw;
+    }
+
+/* mostrar el botón del responsive mostrar esto en la siguiente sección */
+    .menu-principal i {
+        display: block;
+    }
+
+    .menu-bar.active {
+    transform: translateX(0%);
+    }
+}
+
+/* tamaño para la table */
+@media screen  and  (max-width: 850px){
+    .container-servicios{
+        flex-direction: column;
+    }
+
+    .descripcion-servicios{
+        width: 70%;
+        order: 1;
+    }
+
+    .descripcion-servicios .btn{
+        padding: 10px 20px;
+    }
+    
+    .descripcion-servicios .btn:hover{
+        padding: 10px 30px;
+    }
+}

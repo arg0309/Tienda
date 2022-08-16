@@ -1,0 +1,185 @@
+/* variables Globales */
+
+/* las fuentes y los colores */
+
+:root{
+    /* agregar variables colores*/
+
+    --color--primario: #ecb359;
+
+    --color--secundario: #fb5353;
+
+    --color--fondo: #75838b;
+
+    /* variables para fuentes*/
+
+    --text-default: 'Montserrat' , sans-serif;
+}
+
+/* Generales de la pagina o formato*/
+
+/* el * es para ajustar todos los elemento */
+
+*{
+    /* la margen */
+    margin: 0;
+
+    /* Margen interna  */
+    padding: 0;
+
+    /*  formato de de los elementos */
+    box-sizing: border-box;
+
+    /* Fuentes de texto  */
+    font-family: var(--text-default)
+}
+
+/* por etiquetas  */
+a{
+    /* quietar las decoraciones de los enlace  */
+    text-decoration: none;
+}
+
+/*  Cuerpo de la pagina  */
+body{
+    background-color: var(--color--fondo);
+}
+
+/* por clases */
+
+.logo img{
+    /* tamaño específicos */
+    width: 130px;
+    /* margen internan  */
+    padding: 10px;
+    /* propiedad del cursor */
+    cursor: pointer;
+}
+
+/* clase del padre principal  */
+.menu-principal {
+    /* tamaño del 100% De la pagina dinámicos */
+    width: 100%; /*son valores dinamicos*/
+
+    background: var(--color--primario);
+
+    /* tamaño de lato de la barra */
+    height: 75px; /*Pixel son valores fijos*/
+
+    /* propiedad de flex  */
+    display: flex;
+
+    /* agregó un espacio justificado */
+    justify-content: space-around;
+
+    /* alienar los elementos */
+
+    align-items: center;
+
+    /* marge interna */
+
+    padding: 0 30px;
+
+    /* margen de arriba */
+    margin-top: 10px;
+
+    /*z-index: para la capas */
+
+    z-index: 1;
+}
+
+/* Hijo 1 e Hijo 2  */
+.menu-bar{
+    /* Tamaño Dinámico */
+    width: 100%;
+
+    /* Para que se flexible  */
+    display: flex;
+
+    /* Propiedad de Espacios entre elemento  */
+    justify-content: space-between;
+}
+
+/* Hijo1   nav      etiquetas     */ 
+.menu-bar .enlaces ul li a{
+    /* Propiedad Tamaño de letra */
+    font-size: 14px;
+
+    /* propiedad Cambio a Mayúsculas */
+    text-transform: uppercase;
+
+    /* Propiedad color*/
+
+    color:var(--color--fondo);
+
+    /* propiedad de la negrillas */
+
+    font-weight: 600; 
+
+    /* tracción de elemento */
+
+    transition: all 0.9s;
+
+    /* efecto linea de bajo  */
+
+    background: linear-gradient(currentColor,CurrentColor);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+}
+
+/* lista de elemento en bloque */
+.menu-bar .enlaces ul li{
+    /* Propiedad del display en Bloque  */
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+/* pseudo clase es = :hover*/
+.menu-bar .enlaces ul li a:hover{
+    /* cambio de color del texto  */
+    color: black;
+
+    /* Esto es para la linea de bajo  */
+    background-size: 90% 2px;
+}
+
+/* Hijo 2 Redes sociales*/
+
+.menu-bar .sociales a{
+    /* propiedad Area de los iconos */
+    padding: 0 10px ;
+    /* color iconos */
+    color: var(--color--fondo);
+
+    /* suavizar la transition  */
+
+    transition: all 0.8s;
+}
+
+.menu-bar .sociales a:hover{
+    color: black;
+}
+
+/* Estilos del botón responsive*/
+.menu-principal i{
+    /* agregar cursor  */
+    cursor: pointer;
+    /* color icono */
+    color: var(--color--fondo);
+
+    /* tamaño letra */
+    font-size: 40px;
+
+    /* propiedad flotante del icono */
+    float: right;
+
+    /* tracción o cambio de color */
+    transition: all 0.5s;
+
+    display: none;
+}
+
+.menu-principal i:hover{
+    color: #fb5353;
+}

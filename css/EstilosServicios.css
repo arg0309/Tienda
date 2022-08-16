@@ -1,0 +1,254 @@
+/* Estilos de los Servicios*/
+
+.imagen-servicios img{
+
+    /* tamaño de la imagen dinámicos  */
+    max-width: 90%;
+
+    /* margen de la parte inferior */
+
+    margin-bottom: 10px;
+    
+    /* scala de la imagen */
+    transform: scale(1.1);
+
+    /* borde redondo  */
+
+    border-radius: 10px;
+
+    transition: all 0.5s;
+
+
+}
+/* efecto de escala de la imagen */
+.container-servicios:hover .imagen-servicios img{
+
+    transform: scale(1.15);
+}
+
+/* ajuste de las imágenes en pantalla grande  */
+.imagen-servicios{
+
+
+    width: 50%;
+
+    display: flex;
+
+    justify-content: right;
+}
+
+
+/* llamado por ID  */
+#menu-servicios .Contenedor-principal{
+
+    display: flex;
+
+    align-items: center;
+    
+    position: relative;
+
+    /* Capas de los elementos */
+    
+    z-index: 0;
+  
+
+}
+
+.slider{
+    
+    display: flex;
+
+    /* Calculo del tamaño del slider  */
+    height: calc(100vh - 80px);
+
+    /* quietar scroll de un slider */
+    overflow: hidden;
+
+    /* desplazamiento suave del scroll combinado con Javascript*/
+    scroll-behavior: smooth;
+
+   
+
+
+
+}
+
+/* Container Servicios */
+.container-servicios{
+
+    /* Flex nuevamente */
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+
+    /* ajuste de tamaño de pantalla tipo Movil  */
+    
+    flex-basis: 100%;
+
+    
+    flex-shrink: 0;
+
+}
+
+
+.descripcion-servicios{
+
+    width: 30%;
+
+}
+
+.descripcion-servicios h1{
+
+    /* tamaño de la letra de títulos h1 */
+    font-size: 5vw; 
+
+    /* negrilla  */
+
+    font-weight: 600;
+
+    /* convertir el tipo de letra */
+
+    text-transform: uppercase;
+}
+
+.descripcion-servicios h2{
+
+    text-transform: lowercase;
+
+    font-size: 2.2vw;
+
+    font-weight: 100;
+}
+
+.descripcion-servicios p{
+    /* color del párrafo */
+    color: #ecb359;
+
+    /* agregar cursiva */
+    font-style: italic;
+    
+    text-align: center;
+
+
+}
+
+.btn{
+    
+    /* COLOR DEL BOTÓN */
+    background: #ecb359;
+    
+    /* decoración del botón */
+
+    text-decoration: none;
+
+    /* mayúscula */
+
+    text-transform: uppercase;
+    
+    /* tamaño de boton */
+    font-size: 14px;
+
+    /* color de texto */
+    
+    color: #75838b;
+
+    font-weight: 700;
+
+    padding: 15px 30px;
+
+    /* quitar selection del botón  */
+    
+    outline: none;
+
+    /* borde del botón */
+
+    border: 2px solid #ecb359;
+    
+    /* manito de puntero */
+    cursor: pointer;
+
+    position: relative;
+
+    top: 20px;
+
+
+    /* borde del botón */
+    border-radius: 0px 40px 100px 0px;
+
+
+    transition: all 0.3s;
+
+}
+
+.btn:hover{
+    padding: 15px 45px;
+}
+
+/* flecha del icono del botón  */
+
+.btn span{
+    position: relative;
+    top: 6px;
+    left: 8px;
+}
+
+.Contenedor-principal #btn-izquierda,
+.Contenedor-principal #btn-derecha{
+
+    position: absolute;
+
+    height: 10%;
+    
+    width: 50px;
+
+    border: transparent;
+
+    cursor: pointer;
+
+    font-size: 40px;
+
+    margin: 0 15px;
+
+    color: #75838b;
+
+    z-index: 500;
+
+    outline: none;
+
+
+
+}
+
+.Contenedor-principal #btn-derecha{
+    right: 0;
+}
+
+.Contenedor-principal #btn-izquierda{
+    left: 0;
+}
+
+.Contenedor-principal #btn-izquierda:hover,
+.Contenedor-principal #btn-derecha:hover{
+
+    background-color: #ecb359;
+
+    transform: translateY(5px);
+
+}
+
+.Contenedor-principal #btn-izquierda span.material-icons{
+
+    font-size: 40px;
+    /* girar elementos */
+    transform: rotate(180deg);
+}
+
+.Contenedor-principal #btn-derecha span.material-icons {
+
+    font-size: 40px;
+
+}
