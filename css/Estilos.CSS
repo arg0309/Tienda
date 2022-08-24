@@ -3,6 +3,7 @@
 /* las fuentes y los colores */
 
 :root{
+
     /* agregar variables colores*/
 
     --color--primario: #ecb359;
@@ -14,6 +15,7 @@
     /* variables para fuentes*/
 
     --text-default: 'Montserrat' , sans-serif;
+
 }
 
 /* Generales de la pagina o formato*/
@@ -21,6 +23,7 @@
 /* el * es para ajustar todos los elemento */
 
 *{
+
     /* la margen */
     margin: 0;
 
@@ -32,6 +35,7 @@
 
     /* Fuentes de texto  */
     font-family: var(--text-default)
+
 }
 
 /* por etiquetas  */
@@ -45,15 +49,21 @@ body{
     background-color: var(--color--fondo);
 }
 
+
+
 /* por clases */
 
 .logo img{
+
     /* tamaño específicos */
     width: 130px;
     /* margen internan  */
     padding: 10px;
+
     /* propiedad del cursor */
+
     cursor: pointer;
+
 }
 
 /* clase del padre principal  */
@@ -86,10 +96,12 @@ body{
     /*z-index: para la capas */
 
     z-index: 1;
+
 }
 
 /* Hijo 1 e Hijo 2  */
 .menu-bar{
+
     /* Tamaño Dinámico */
     width: 100%;
 
@@ -98,10 +110,13 @@ body{
 
     /* Propiedad de Espacios entre elemento  */
     justify-content: space-between;
+
+   
 }
 
 /* Hijo1   nav      etiquetas     */ 
 .menu-bar .enlaces ul li a{
+
     /* Propiedad Tamaño de letra */
     font-size: 14px;
 
@@ -126,17 +141,26 @@ body{
     background-position: 100% 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
+
 }
+
+
+
+
 
 /* lista de elemento en bloque */
 .menu-bar .enlaces ul li{
     /* Propiedad del display en Bloque  */
     display: inline-block;
+
     padding: 0px 10px;
+    
+    
 }
 
 /* pseudo clase es = :hover*/
 .menu-bar .enlaces ul li a:hover{
+
     /* cambio de color del texto  */
     color: black;
 
@@ -155,13 +179,18 @@ body{
     /* suavizar la transition  */
 
     transition: all 0.8s;
+
+    
+
 }
 
 .menu-bar .sociales a:hover{
     color: black;
 }
 
+
 /* Estilos del botón responsive*/
+
 .menu-principal i{
     /* agregar cursor  */
     cursor: pointer;
@@ -181,5 +210,7 @@ body{
 }
 
 .menu-principal i:hover{
+
     color: #fb5353;
+
 }

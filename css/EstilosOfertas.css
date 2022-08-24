@@ -1,0 +1,155 @@
+#servicios{
+    background: #ecb359;
+
+    height: 100vh;
+
+    padding: 40px;
+}
+
+.imagen-central img{
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    border: 5px solid #75838b;
+
+    /* Propiedad Object- "fit-Position   */
+
+    object-fit: cover;
+    object-position: center center;
+
+}
+
+.servicios-titulos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-bottom: 50px;
+
+}
+
+.servicios-ofertas{
+    display: grid;
+    
+
+    /* Ajuste de Columnas */
+    grid-template-columns: repeat(3,1fr);
+
+    /* Ajuste de filas */
+    grid-template-rows: repeat(2,auto);
+    
+    /* Espacio entre columnas */
+    grid-gap:  30px;
+
+    grid-template-areas: "Arroz  imagen Licuadora" 
+                         "Carnes    imagen Pescaderia"
+
+}
+
+.Licuadora{
+    grid-column: Licuadora;
+    grid-row: Licuadora;
+}
+
+.Carnes{
+    grid-row: Carnes;
+    grid-column: Carnes;
+}
+
+.Pescaderia{
+    grid-row: Pescaderia;
+    grid-column: Pescaderia;
+}
+
+.Arroz{
+    grid-row: Arroz;
+    grid-column: Arroz;
+}
+
+
+.imagen-central{
+    grid-row: imagen;
+    grid-column: imagen;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    transition: all 0.5s;
+}
+
+.imagen-central:hover{
+    transform: scale(1.1);
+    
+}
+
+.imagen-central img:hover{
+    background: white;
+
+}
+
+.items{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    
+}
+
+.items .texto-item{
+    font-size: 14px;
+    color: #75838b;
+    font-style: italic;
+    padding: 0 20px;
+}
+
+.items .titulo-item{
+    color: white;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.items span.material-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #75838b;
+
+    font-size: 40px;
+    padding: 20px;
+    border: 5px double white;
+    border-radius: 50%;
+   
+    transition: all 0.5s;
+}
+
+.items span.material-icons:hover{
+    background: white;
+}
+
+.titulos{
+    color: #75838b;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.subtitulo{
+    color: white;
+
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
